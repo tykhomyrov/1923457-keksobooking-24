@@ -1,9 +1,10 @@
-function getRandomArbitrary(min, max, maxDigits = 0) {
-    if (min > max, min < 0, max <= 0) {
-      return ('Задан неверный диапазон! Укажите другие числа.');
-    }
-
-    const digitsDegree = 10 ** maxDigits;
-    return ~~((Math.random() * (max - min) + min) * digitsDegree) / digitsDegree;
+function getRandomArbitrary(min, max) {
+  if (min >= 0 && max > 0 && min < max) {
+  if (min === max) {
+  return Math.round(min);
   }
-  getRandomArbitrary(1, 2, 6);
+  return Math.random() * (max - min) + min;
+  }
+  return('Задан неверный диапазон! Укажите другие числа.');
+  }
+  getRandomArbitrary(12, 118);
