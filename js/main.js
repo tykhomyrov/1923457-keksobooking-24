@@ -1,6 +1,6 @@
 function getRandomArbitrary(min, max, maxDigits = 0) {
     if (min > max || min < 0 || max <= 0) {
-      return ('Not allowed');
+      return ("Not allowed");
     }
 
     const digitsDegree = 10 ** maxDigits;
