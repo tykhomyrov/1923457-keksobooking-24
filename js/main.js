@@ -1,4 +1,6 @@
-function getRandomArbitrary(min, max, maxDigits = 0) {
+function getRandomArbitrary(min, max) 
+let maxDigits = 0;
+{
     if (min > max || min < 0 || max <= 0) {
       return ("Заданы неверные значения. Введите другие значения");
     }
