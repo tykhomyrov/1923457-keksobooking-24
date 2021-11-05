@@ -7,4 +7,3 @@ function getRandomArbitrary(min, max, maxDigits = 0) {
     return ~~((Math.random() * (max - min) + min) * digitsDegree) / digitsDegree;
   }
   getRandomArbitrary(1, 2, 6);
-  
